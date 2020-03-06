@@ -1,4 +1,4 @@
-package by.ld.unit3.main;
+package by.ld.unit03.main;
 
 import java.util.Scanner;
 
