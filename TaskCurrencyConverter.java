@@ -47,11 +47,6 @@ public class TaskCurrencyConverter {
             System.out.println("что то в логике твоей не верно");
         }
 
-        for (int i = 1; i < 10; i++) {
-            double test = type1.length();
-            System.out.println(test);
-        }
-
         //        вывод
 
         System.out.println(type1);
