@@ -25,22 +25,22 @@ public class TaskCurrencyConverter {
         double eurEs = 0.013;
 
         //        конвертер
-        if ((type1 == rubS) & (type2 == dolS)) {
+        if ((rubS.equals(type1)) && (dolS.equals(type2))) {
             sumOut = sumIn * dolUs;
             System.out.println(sumIn + " российских рублей = " + sumOut + " $ ");
-        } else if ((type1 == rubS) & (type2 == dolC)) {
+        } else if ((type1.equals(rubS)) && (type2.equals(dolC))) {
             sumOut = sumIn * dolCa;
             System.out.println(sumIn + " российских рублей = " + sumOut + " канадских долларов");
-        } else if ((type1 == rubS) & (type2 == eurS)) {
+        } else if ((type1.equals(rubS)) && (type2.equals(eurS))) {
             sumOut = sumIn * eurEs;
             System.out.println(sumIn + " российских рублей = " + sumOut + " евро ");
-        } else if ((type1 == dolC) & (type2 == rubS)) {
+        } else if ((type1.equals(dolC)) && (type2.equals(rubS))) {
             sumOut = sumIn / dolUs;
             System.out.println(sumIn + " $ = " + sumOut + "российским рублям ");
-        } else if ((type1 == dolC) & (type2 == rubS)) {
+        } else if ((type1.equals(dolC)) && (type2.equals(rubS))) {
             sumOut = sumIn * dolCa;
             System.out.println(sumIn + " канадских долларов = " + sumOut + "российским рублей ");
-        } else if ((type1 == eurS) & (type2 == rubS)) {
+        } else if ((type1.equals(eurS)) && (type2.equals(rubS))) {
             sumOut = sumIn / eurEs;
             System.out.println(sumIn + " евро " + sumOut + " российским рублям ");
         } else {
@@ -49,8 +49,8 @@ public class TaskCurrencyConverter {
 
         //        вывод
 
-        System.out.println(type1);
-        System.out.println(type2);
+        System.out.println("первый выбор = " + type1);
+        System.out.println("второй выбор = " + type2);
 
 //__________декомпозиция !!!
     }
@@ -88,7 +88,7 @@ public class TaskCurrencyConverter {
     }
 
     private static double sumIn1() {
-        double sumIn1 = 0;
+        double sumIn1;
         Scanner inData = new Scanner(System.in);
         System.out.print("Сумма в исходной валюте >  ");
         sumIn1 = inData.nextDouble();
