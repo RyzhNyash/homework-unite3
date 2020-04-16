@@ -7,6 +7,7 @@ public class TaskCurrencyConverter {
 
 
         //        Scanner inData = new Scanner(System.in);
+        
         String type1 = inputType1(); //во что конвертируем
         String type2 = inputType2(); //что конвертируем
         double sumIn = sumIn1();
@@ -14,6 +15,7 @@ public class TaskCurrencyConverter {
         System.out.println("__________");
 
         //        курс и виды валюты
+        
         String rubS = "1";
         String dolS = "2";
         String dolC = "3";
@@ -25,6 +27,7 @@ public class TaskCurrencyConverter {
         double eurEs = 0.013;
 
         //        конвертер
+        
         if ((rubS.equals(type1)) && (dolS.equals(type2))) {
             sumOut = sumIn * dolUs;
             System.out.println(sumIn + " российских рублей = " + sumOut + " $ ");
@@ -50,11 +53,11 @@ public class TaskCurrencyConverter {
         //        вывод
 
         System.out.println("первый выбор = " + type1);
-        System.out.println("второй выбор = " + type2);
-
-//__________декомпозиция !!!
+        System.out.println("второй выбор = " + type2);       
     }
 
+    // декомпозиция !!!
+    
     private static String inputType1() {
 
         Scanner inData = new Scanner(System.in);
