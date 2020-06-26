@@ -118,3 +118,4 @@ public class TaskCurrencyConverter {
         return (sumIn1);
     }
 }
+// задания модуля 3 зачтены
