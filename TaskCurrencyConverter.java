@@ -1,5 +1,5 @@
 package by.ld.unit3;
-
+// how it works, new attempt :)
 import java.util.Scanner;
 
 public class TaskCurrencyConverter {
@@ -65,7 +65,7 @@ public class TaskCurrencyConverter {
             sumOut = (sumIn / dolUs) * dolCa;
             System.out.println(sumIn + " евро = " + sumOut + " канадский $ ");
         } else {
-            System.out.println("что то в логике твоей не верно");
+            System.out.println("что то в логике твоей не верно " + sumIn);
         }
 
         //        вывод
